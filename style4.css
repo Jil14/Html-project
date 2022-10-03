@@ -1,0 +1,108 @@
+/*##*##*## global page ##*##*/
+body{
+    background-color: #808080;
+  padding: 2%;
+}
+
+header{
+  padding: 0px 50px;
+  align-items: center;
+}
+
+footer{
+  grid-area: footer;
+  text-align: center;
+  padding: 20px 80px;
+  background-color: #aaf7c9;
+}
+
+p,a,li{
+  font-family: 'Roboto',sans-serif;
+  font-size: 1.2em;
+}
+
+h1{
+  align-items: center;
+  font-size: 1.6em;
+  font-color:#e02a03;
+}
+
+h2,h3{
+  color:#fff;
+  font-size: 1.5em;
+}
+
+/*********** our global classes **********/
+
+
+.info{
+  align-items: center;
+  padding: 20px 50px;
+  background-color: #c7f784;
+}
+
+
+/******** Page Styling ************/
+
+body{
+
+  display: grid;
+  grid-template-columns: repeat(2,50%);
+  grid-template-areas:
+  "header header header header"
+  "you you you you"
+  "main main main sidebar"
+  "footer footer footer footer";
+}
+
+
+header{
+  background-color: #d2b48c;
+  padding: 10px 20px;
+  align-items:center;
+  grid-area:header;
+  }
+
+body img{
+  padding: 20px 500px;
+  height: 80px;
+  width: 80px;
+}
+
+.info {
+  grid-area: you;
+  font-size: 1.3em;
+  padding: 0px 50px;
+}
+
+.video1 iframe{
+  padding: 10px 110px;
+  background-color: #f7cb84;
+}
+
+.video2 iframe{
+    padding: 10px 110px;
+    background-color: #f7cb84;
+}
+
+main{
+  grid-area: main;
+  padding: 0px 50px;
+}
+
+
+article{
+  grid-area: sidebar;
+}
+
+article aside{
+  grid-area: sidebar;
+  padding: 0px 60px;
+  background-color: #b5fca9;
+}
+
+body footer{
+  padding: 10px 20px;
+}
+
+/*+*+*+*+*+*+*+*+*+*+*+* End of CSS *+*+*+*+*+*+*+*+*/

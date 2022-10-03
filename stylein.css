@@ -1,0 +1,175 @@
+/*global styling */
+
+body{
+  margin: 2px;
+padding:0px 5px;
+}
+
+h1,h3,h4{
+  font-family:'Oswald', sans-serif;
+  font-size: 1.4em;
+}
+
+h2{
+  font-family: 'Roboto',fantasy;
+  font-size: 1.3em;
+  color:#00ff00;
+  padding: 0px 300px;
+}
+
+p,a,li{
+  list-style: circle;
+  font-size: 1.2em;
+  font-famliy:'Roboto', sans-serif;
+  text-decoration-style: solid;
+}
+
+
+ /* our global classes */
+
+ .example{
+   padding: 0px 50px;
+   background-color:#115b89;
+   color:#000;
+ }
+
+
+/**** page Styling ******/
+header{
+background-color: #85D118;
+  height:260px;
+padding: 20px 20px;
+align-items:center;
+
+}
+
+ header > a{
+
+  width: auto;
+  height: 110px;
+  flex-grow: 1;
+}
+/*override the image  ***/
+header >div > a > img{
+
+width: auto;
+height: 125px;
+}
+
+header>div >p{
+  text-align: center;
+}
+
+header > div > nav >ul{
+  padding:  0px 10px;
+}
+
+footer{
+  align-items: center;
+  padding: 150px;
+  background-image: url('../img/getready.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: #8b0000;
+}
+
+.masthead{
+  height: auto;
+  padding: inherit;
+
+}
+
+
+.example-1{
+  font-size: 1.5em;
+  padding: 0px 60px;
+}
+
+.example-2{
+  background-color: #87ceeb;
+  font-size: 1.5em;
+  padding:  70px;
+  image-resolution:snap;
+}
+
+.example-3{
+  font-size: 1.5em;
+  padding: 0px 50px;
+}
+
+.example-3 img{
+  padding: 0px 2px;
+}
+
+.example-4{
+  background-color: ##4f86f7;
+  font-size: 1.5em;
+  padding: 0px 100px;
+
+}
+
+.example-5{
+  padding: 0px 160px;
+}
+
+.masthead > div{
+
+  align-items: center;
+  justify-content: center;
+    height: auto;
+    width: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.masthead > div> h1{
+  color: #EBBB17;
+  font-size: 40px;
+}
+
+.table{
+  padding:10px 140px;
+}
+
+
+body table{
+  font-size: 1.3em;
+  padding: 70px;
+  align-items: center;
+  background-color: #32cd32;
+}
+
+
+@media screen and (orientation: landscape){
+  header{
+    background-color: red;
+
+  }
+}
+
+@media screen and (max-width: 1024px){
+table{
+    grid-template-columns: 100%;
+  }
+  .example-3{
+      padding: 5%;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .example-3{
+      grid-template-columns: 50% 50%;
+  }
+  .example-3 div{
+    padding: 15px;
+  }
+
+ footer{
+   padding: 20px;
+   flex-wrap: wrap;
+   text-align: center;
+   justify-content: center;
+ }
+}
+
+
+/*+*+*+*+*+*+*+*+*+*+*+* End of CSS *+*+*+*+*+*+*+*+*/

@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact info</title>
+  <meta name="description" content="This page content contact information to the company">
+  <meta name="robots" content="noindex, nofollow">
+
+  <!--here i am declaring my font style -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@600&family=Roboto:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+
+<!-- here i have linked my CSS file -->
+<link rel="stylesheet" href="./CSS/stylecon.css">
+
+<!-- Javascript -->
+<script  src="./js/custom-js.js"></script>
+
+</head>
+
+<!--body of the webpage -->
+<body id="B1">
+  <header id="contacthead">
+    <div>
+        <a href="index.html"><img src="./img/panam-logo.png" alt="Airways"></a>
+        <a href="contact.html"><img src="./img/download.jpg" alt="Welcome"></a>
+  </div>
+  <div>
+     <nav>
+       <ul>
+           <li><a href="index.html">Main Page</a> </li>
+            <li><a href="interior.html">Interiors</a> </li>
+             <li><a href="about.html">About</a> </li>
+       </ul>
+     </nav>
+    </div>
+  </header>
+  <main>
+    <section class="contact">
+      <h1>You can Reach us by many Ways
+      </h1>
+    </section>
+    <section>
+      <h2>Submit the form and help us to know your inquery</h2>
+      <form  action="/action_page.php"   method="post">
+        <!-- text will put box for Writing text as input in it -->
+        <h3>Your contact information</h3>
+        <input type="text" name="firstname" placeholder="First Name" required>
+       <input type="text" name="lastname" placeholder="Last Name" required>
+      <br>
+      <br>
+      <input type="email" name="email-address" placeholder="Your Email" required>
+      <br>
+      <br>
+       <input type="text" name="number" placeholder="Contact number" required>
+       <br>
+       <br>
+       <input type="text" name="address" placeholder="Address" required>
+       <br>
+       <br>
+
+        <!-- radio button is used to select only one option from all  the given ones-->
+        <h3>Problem you are facing</h3>
+        <input type="radio" id="opt1" name="opt1" value="You want to book tickets">
+        <label for="opt1">You want to book tickets</label>
+        <br>
+        <br>
+        <input type="radio" id="opt2" name="opt2" value="You want to cancel booking">
+        <label for="opt2">You want to cancel booking</label>
+        <br>
+        <br>
+        <input type="radio" id="op3" name="opt3" value="other Problem with service">
+        <label for="op3">other Problem with service</label>
+         <br>
+         <br>
+         <input type="radio" id="op4" name="opt4" value="Want to talk Customer service officer">
+         <label for="op3">Want to talk Customer service officer</label>
+          <br>
+          <br>
+
+
+          <!-- check box -->
+
+           <input type="checkbox" id="choice1" name="v1" value="v1">
+            <label for="choice1">Do You want our premium membership</label>
+            <input type="checkbox" id="choice2" name="v2" value="v2">
+             <label for="choice2">Do you want to cancel the booking </label>
+             <br>
+             <br>
+
+                <input type="date" id="date" name="booking">
+                 <label for="date">date of booking</label>
+              <br>
+              <br>
+
+                 <input type="file" id="myfile" name="myfile" >
+                   <label for="myfile">Upload your booked ticket here</label>
+                 <br>
+                 <br>
+              <input type="submit" name="submit" id="submit" value="Submit Form">
+       </form>
+    </section>
+
+<!--end of form-->
+
+  </main>
+  <footer>
+    <h3>Thank you for contacting us</h3>
+  </footer>
+</body>
+</html>
+<!-- End of Html -->
